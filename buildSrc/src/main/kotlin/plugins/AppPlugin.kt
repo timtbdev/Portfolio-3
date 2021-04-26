@@ -57,14 +57,14 @@ class AppPlugin : Plugin<Project> {
             buildTypes {
                 named("debug") {
                     versionNameSuffix = "-dev"
-                    buildConfigField("String", "API_BASE", "http://www.timtb.dev/api/")
+                    buildConfigField("String", "API_BASE", "\"https://timtb.dev/api/\"")
                     isMinifyEnabled = false
                     isDebuggable = true
                     isTestCoverageEnabled = true
                     manifestPlaceholders["crashlyticsEnabled"] = false
                 }
                 named("release") {
-                    buildConfigField("String", "API_BASE", "http://www.timtb.dev/api/")
+                    buildConfigField("String", "API_BASE", "\"https://timtb.dev/api/\"")
                     // Enables code shrinking for the release build type.
                     isMinifyEnabled = true
                     isDebuggable = false
@@ -154,6 +154,8 @@ class AppPlugin : Plugin<Project> {
             // Kotlin
             add("implementation", Libs.Kotlin.Stdlib)
             add("implementation", Libs.Kotlin.Coroutines)
+            // Material Design
+            add("implementation", Libs.Google.MaterialDesign)
             // Hilt
             add("implementation", Libs.Google.Hilt.Android)
             add("implementation", Libs.Google.Hilt.NavigationCompose)

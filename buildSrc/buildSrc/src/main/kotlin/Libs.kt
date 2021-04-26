@@ -11,6 +11,8 @@ object Libs {
     }
 
     object Google {
+        val MaterialDesign: String
+        get() = "com.google.android.material:material:${Versions.MaterialDesign}"
         object Hilt {
             val Android: String
                 get() = "com.google.dagger:hilt-android:${Versions.Hilt}"

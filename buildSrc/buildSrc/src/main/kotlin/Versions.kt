@@ -2,6 +2,7 @@ object Versions{
     const val Gradle: String = "7.0.0-alpha14"
     const val Kotlin: String = "1.4.32"
     const val Coroutines: String = "1.3.8"
+    const val MaterialDesign: String = "1.4.0-alpha02"
     const val Hilt: String = "2.33-beta"
     const val HiltNavigationCompose: String = "1.0.0-alpha01"
     const val Accompanist: String = "0.7.1"
