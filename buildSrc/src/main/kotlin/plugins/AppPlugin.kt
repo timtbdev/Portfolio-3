@@ -158,8 +158,10 @@ class AppPlugin : Plugin<Project> {
             add("implementation", Libs.Google.MaterialDesign)
             // Hilt
             add("implementation", Libs.Google.Hilt.Android)
-            add("implementation", Libs.Google.Hilt.NavigationCompose)
             add("kapt", Libs.Google.Hilt.Compiler)
+            add("implementation", Libs.AndroidX.Hilt.NavigationCompose)
+            add("implementation", Libs.AndroidX.Hilt.Work)
+            add("kapt", Libs.AndroidX.Hilt.Compiler)
             // Accompanist
             add("implementation", Libs.Google.Accompanist.Coil)
             add("implementation", Libs.Google.Accompanist.Pager)
@@ -168,6 +170,7 @@ class AppPlugin : Plugin<Project> {
             // AndroidX
             add("implementation", Libs.AndroidX.Ktx)
             add("implementation", Libs.AndroidX.AppCompat)
+            add("implementation", Libs.AndroidX.ConstraintLayout)
             add("implementation", Libs.AndroidX.ConstraintLayoutCompose)
             add("implementation", Libs.AndroidX.DataStorePreference)
             // Compose

@@ -1,4 +1,4 @@
-package timtb.dev.portfolio.ui.theme
+package timtb.dev.portfolio.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

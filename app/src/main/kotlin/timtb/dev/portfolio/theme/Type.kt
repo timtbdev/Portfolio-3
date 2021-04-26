@@ -1,4 +1,4 @@
-package timtb.dev.portfolio.ui.theme
+package timtb.dev.portfolio.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

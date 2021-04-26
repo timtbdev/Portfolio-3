@@ -8,7 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import timtb.dev.portfolio.ui.theme.PortfolioTheme
+import timtb.dev.portfolio.theme.PortfolioTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
     }
 }
 

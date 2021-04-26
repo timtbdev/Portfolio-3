@@ -12,14 +12,13 @@ object Libs {
 
     object Google {
         val MaterialDesign: String
-        get() = "com.google.android.material:material:${Versions.MaterialDesign}"
+            get() = "com.google.android.material:material:${Versions.MaterialDesign}"
+
         object Hilt {
             val Android: String
                 get() = "com.google.dagger:hilt-android:${Versions.Hilt}"
             val Compiler: String
-                get() = "com.google.dagger:hilt-android-compiler:${Versions.Hilt}"
-            val NavigationCompose: String =
-                "androidx.hilt:hilt-navigation-compose:${Versions.HiltNavigationCompose}"
+                get() = "com.google.dagger:hilt-compiler:${Versions.Hilt}"
 
         }
 
@@ -43,11 +42,23 @@ object Libs {
         val AppCompat: String
             get() = "androidx.appcompat:appcompat:${Versions.AppCompat}"
 
+        val ConstraintLayout: String
+            get() = "androidx.constraintlayout:constraintlayout:${Versions.ConstraintLayout}"
+
         val ConstraintLayoutCompose: String
             get() = "androidx.constraintlayout:constraintlayout-compose:${Versions.ConstraintLayoutCompose}"
 
         val DataStorePreference: String
             get() = "androidx.datastore:datastore-preferences:${Versions.DataStore}"
+
+        object Hilt {
+            val NavigationCompose: String =
+                "androidx.hilt:hilt-navigation-compose:${Versions.HiltNavigationCompose}"
+            val Work: String
+                get() = "androidx.hilt:hilt-work:${Versions.HiltWork}"
+            val Compiler: String
+                get() = "androidx.hilt:hilt-compiler:${Versions.HiltWork}"
+        }
 
         object Compose {
             val Ui: String
