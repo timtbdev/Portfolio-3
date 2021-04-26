@@ -56,7 +56,6 @@ class AppPlugin : Plugin<Project> {
 
             buildTypes {
                 named("debug") {
-                    applicationIdSuffix = ".dev"
                     versionNameSuffix = "-dev"
                     buildConfigField("String", "API_BASE", "http://www.timtb.dev/api/")
                     isMinifyEnabled = false

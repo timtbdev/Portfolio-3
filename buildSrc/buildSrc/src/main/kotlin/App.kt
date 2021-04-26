@@ -1,5 +1,5 @@
 object App {
-    const val Id: String = "tim.tb.dev"
+    const val Id: String = "timtb.dev.portfolio"
     const val VersionCode: Int = 1
     const val VersionName: String = "1.0.0.0"
     const val MinSdk: Int = 21
